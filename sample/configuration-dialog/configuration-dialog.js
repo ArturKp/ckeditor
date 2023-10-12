@@ -14,11 +14,10 @@
 		overlay.id = 'overlay';
 		overlay.innerHTML = `
 <form class="body">
-	<h2>Connect CKEditor5 Premium Features</h2>
-	<p>If you do not have CKEditor5 license key yet, <a href="https://ckeditor.com/docs/trial/latest/guides/overview.html" target="_blank">see the documentation</a>.</p>
+	<h2>Connect CKBox</h2>
 	<div>
-		<label for="license-key">CKEditor5 License Key</label>
-		<input id="license-key">
+		<label for="ckbox-token-url">CKBox token URL</label>
+		<input id="ckbox-token-url">
 	</div>
 	<button id="start" type="submit">Start</button>
 </form>`;
@@ -27,14 +26,14 @@
 
 		const config = getStoredConfig();
 
-		const licenseKeyInput = document.getElementById( 'license-key' );
-		licenseKeyInput.value = config.licenseKey || '';
+		const ckboxTokenUrlInput = document.getElementById( 'ckbox-token-url' );
+		ckboxTokenUrlInput.value = config.ckboxTokenUrl || '';
 
 		return new Promise( resolve => {
 			overlay.querySelector( 'form' ).addEventListener( 'submit', event => {
 				event.preventDefault();
 
-				config.licenseKey = licenseKeyInput.value;
+				config.ckboxTokenUrl = ckboxTokenUrlInput.value;
 
 				overlay.remove();
 				storeConfig( config );

@@ -1,7 +1,9 @@
 createDialog().then( config => {
 	return DecoupledEditor
 		.create( document.querySelector( '.editor' ), {
-			licenseKey: config.licenseKey
+			ckbox: {
+				tokenUrl: config.ckboxTokenUrl
+			}
 		} )
 		.then( editor => {
 			window.editor = editor;
@@ -18,7 +20,7 @@ function handleSampleError( error ) {
 
 	const message = [
 		'Oops, something went wrong!',
-		`Please, report the following error on ${ issueUrl } with the build id "7u86w6qr9l7c-ffn9ubukut0i" and the error stack trace:`
+		`Please, report the following error on ${ issueUrl } with the build id "1rbnwz455pid-ffn9ubukut0i" and the error stack trace:`
 	].join( '\n' );
 
 	console.error( message );

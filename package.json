@@ -12,6 +12,7 @@
     "@ckeditor/ckeditor5-autoformat": "40.0.0",
     "@ckeditor/ckeditor5-basic-styles": "40.0.0",
     "@ckeditor/ckeditor5-block-quote": "40.0.0",
+    "@ckeditor/ckeditor5-ckbox": "40.0.0",
     "@ckeditor/ckeditor5-cloud-services": "40.0.0",
     "@ckeditor/ckeditor5-editor-decoupled": "40.0.0",
     "@ckeditor/ckeditor5-essentials": "40.0.0",
@@ -25,10 +26,8 @@
     "@ckeditor/ckeditor5-media-embed": "40.0.0",
     "@ckeditor/ckeditor5-paragraph": "40.0.0",
     "@ckeditor/ckeditor5-paste-from-office": "40.0.0",
-    "@ckeditor/ckeditor5-paste-from-office-enhanced": "40.0.0",
     "@ckeditor/ckeditor5-table": "40.0.0",
-    "@ckeditor/ckeditor5-typing": "40.0.0",
-    "@ckeditor/ckeditor5-upload": "40.0.0"
+    "@ckeditor/ckeditor5-typing": "40.0.0"
   },
   "devDependencies": {
     "@ckeditor/ckeditor5-dev-translations": "^32.1.2",

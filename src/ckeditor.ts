@@ -9,6 +9,7 @@ import { Alignment } from '@ckeditor/ckeditor5-alignment';
 import { Autoformat } from '@ckeditor/ckeditor5-autoformat';
 import { Bold, Italic, Strikethrough, Underline } from '@ckeditor/ckeditor5-basic-styles';
 import { BlockQuote } from '@ckeditor/ckeditor5-block-quote';
+import { CKBox } from '@ckeditor/ckeditor5-ckbox';
 import { CloudServices } from '@ckeditor/ckeditor5-cloud-services';
 import { Essentials } from '@ckeditor/ckeditor5-essentials';
 import { FontBackgroundColor, FontColor, FontFamily, FontSize } from '@ckeditor/ckeditor5-font';
@@ -19,7 +20,8 @@ import {
 	ImageResize,
 	ImageStyle,
 	ImageToolbar,
-	ImageUpload
+	ImageUpload,
+	PictureEditing
 } from '@ckeditor/ckeditor5-image';
 import { ImportWord } from '@ckeditor/ckeditor5-import-word';
 import { Indent, IndentBlock } from '@ckeditor/ckeditor5-indent';
@@ -28,7 +30,6 @@ import { DocumentList, DocumentListProperties } from '@ckeditor/ckeditor5-list';
 import { MediaEmbed } from '@ckeditor/ckeditor5-media-embed';
 import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
 import { PasteFromOffice } from '@ckeditor/ckeditor5-paste-from-office';
-import { PasteFromOfficeEnhanced } from '@ckeditor/ckeditor5-paste-from-office-enhanced';
 import {
 	Table,
 	TableCellProperties,
@@ -36,7 +37,6 @@ import {
 	TableToolbar
 } from '@ckeditor/ckeditor5-table';
 import { TextTransformation } from '@ckeditor/ckeditor5-typing';
-import { SimpleUploadAdapter } from '@ckeditor/ckeditor5-upload';
 
 // You can read more about extending the build with additional plugins in the "Installing plugins" guide.
 // See https://ckeditor.com/docs/ckeditor5/latest/installation/plugins/installing-plugins.html for details.
@@ -47,6 +47,7 @@ class Editor extends DecoupledEditor {
 		Autoformat,
 		BlockQuote,
 		Bold,
+		CKBox,
 		CloudServices,
 		DocumentList,
 		DocumentListProperties,
@@ -70,8 +71,7 @@ class Editor extends DecoupledEditor {
 		MediaEmbed,
 		Paragraph,
 		PasteFromOffice,
-		PasteFromOfficeEnhanced,
-		SimpleUploadAdapter,
+		PictureEditing,
 		Strikethrough,
 		Table,
 		TableCellProperties,
